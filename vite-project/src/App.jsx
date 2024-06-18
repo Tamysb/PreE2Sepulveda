@@ -1,10 +1,12 @@
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer"
 import Navbar from "./components/Navbar/Navbar"
-import ItemListContainer from "./components/itemListContainer/ItemListContainer"
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 function App(){
   return (
-  <>
-  <Navbar/>
-  <ItemListContainer greeting={'Bienvenidos'}/>
+  < >
+  <Navbar className="flex justify-between p-4 bg-[rgba(255,255,255,0.3)] grow"/>
+  <ItemListContainer/>
+  <ItemDetailContainer/>
 
   </>
   )
