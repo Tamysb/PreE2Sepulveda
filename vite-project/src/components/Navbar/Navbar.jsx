@@ -3,9 +3,10 @@ import CartWidget from "../CartWidget/CartWidget"
 
 function Navbar(){
     return(
-    <nav className="flex gap-2 text-xl item-center">
-        <nav>
-            <Link to="/"className="text-3xl font-blod">Ecomerce</Link> 
+    <nav className="flex items-center justify-between">
+        <Link to="/"className="flex items-center gap-2 text-3xl font-blod">Ecomerce</Link> 
+        <nav className="flex items-center justify-between gap-2 p-4 text-xl">
+            
             <NavLink to="/category/beauty">Belleza</NavLink>
             <NavLink to="/category/fragrances">Perfume</NavLink>
             <NavLink to="/category/skin-care">Skin Care</NavLink>

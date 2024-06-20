@@ -1,3 +1,4 @@
+import ItemCount from "../ItemCount/ItemCount"
 function ItemDetail({id,title,price,images,category,description}){
     
   
@@ -8,6 +9,7 @@ function ItemDetail({id,title,price,images,category,description}){
               <h2 className="font-bold truncate">{title}</h2>
               <p>{description}</p>
               <p>${price}</p>
+              <ItemCount/>
               
             </article>
               
