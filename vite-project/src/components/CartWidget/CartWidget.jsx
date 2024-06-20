@@ -1,8 +1,7 @@
 function CartWidget(){
     return (
         <>
-        <img src="/carrito.png" alt="carrito" className="h-10 w-10 inline-block
-        "/>
+        <img src="/carrito.png" alt="carrito" className="inline-block w-10 h-10 "/>
         <p className="inline-block">5</p>
         </>
     )

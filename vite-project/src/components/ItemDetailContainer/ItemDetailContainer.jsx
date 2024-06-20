@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react"
 import ItemDetail from "../ItemDetail/ItemDetail"
-
+import { useParams } from "react-router-dom"
 function ItemDetailContainer(){
     const [producto,setProducto]=useState({})
+    const {id}= useParams()
     useEffect(()=>{
-        fetch('https://dummyjson.com/products/1')
+        fetch(`https://dummyjson.com/products/${id}`)
             .then((res) =>{
                 return res.json()
             })
@@ -12,7 +13,7 @@ function ItemDetailContainer(){
                 console.log(data)
                 setProducto(data)
             });
-    },[])
+    },[id])
     return(
         <div>
             <ItemDetail {...producto}/>

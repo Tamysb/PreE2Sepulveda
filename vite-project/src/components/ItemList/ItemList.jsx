@@ -1,5 +1,6 @@
 import Item from "../Item/Item"
 function ItemList({ productos }) { 
+    console.log(productos)
     return (
         <div>
             {productos.map((prod)=> {

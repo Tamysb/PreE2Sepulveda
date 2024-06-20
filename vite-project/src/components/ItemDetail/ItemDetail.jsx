@@ -1,4 +1,5 @@
 function ItemDetail({id,title,price,images,category,description}){
+    
   
     return(
         <div className="grid grid-cols-2" >
